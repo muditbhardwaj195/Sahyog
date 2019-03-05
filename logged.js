@@ -32,10 +32,7 @@ document.querySelector('.pcontent').innerHTML = ;
 } else {
 
 }*/
-var auth2 = gapi.auth2.init({
-    client_id: '386445670275-fdce19rfmq07ll61o5n8i415noulm2f2.apps.googleusercontent.com',
-    fetch_basic_profile: true,
-});
+var auth2 = gapi.auth2.init();
 if (auth2.isSignedIn.get()) {
   
     var profile = auth2.currentUser.get().getBasicProfile();
