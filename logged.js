@@ -32,12 +32,13 @@ document.querySelector('.pcontent').innerHTML = ;
 } else {
 
 }*/
+auth2 = gapi.auth2.init({
+    client_id: 'CLIENT_ID.apps.googleusercontent.com',
+    fetch_basic_profile: false,
+    scope: 'profile'
+  });  
 if (auth2.isSignedIn.get()) {
-    auth2 = gapi.auth2.init({
-        client_id: 'CLIENT_ID.apps.googleusercontent.com',
-        fetch_basic_profile: false,
-        scope: 'profile'
-      });    
+  
     var profile = auth2.currentUser.get().getBasicProfile();
     document.querySelector('.signinbtn').setAttribute('style','display:none;');
     document.querySelector('.pcontent').setAttribute('style','display:block;');
