@@ -35,7 +35,6 @@ document.querySelector('.pcontent').innerHTML = ;
 var auth2 = gapi.auth2.init({
     client_id: '386445670275-fdce19rfmq07ll61o5n8i415noulm2f2.apps.googleusercontent.com',
     fetch_basic_profile: true,
-    scope: 'profile'
 });
 if (auth2.isSignedIn.get()) {
   
