@@ -20,7 +20,7 @@ function getCookie(cname) {
     return "";
 }
 var chk = getCookie("check");
-if (chk === "yes") {
+if (chk === "true") {
 document.querySelector('.signinbtn').setAttribute('style','display:none;');
 document.querySelector('.pcontent').setAttribute('style','display:block;');
 document.querySelector('.pcontent').innerHTML = getCookie("name");
