@@ -7,7 +7,8 @@ function signOut() {
 function onSignIn(googleUser) {
 var profile = googleUser.getBasicProfile();
 if (window.location.href === "https://sahyog.netlify.com/signin.html#" || window.location.href === "https://sahyog.netlify.com/signin.html" ) {
-  window.location = "https://sahyog.netlify.com/"
+  window.location = "https://sahyog.netlify.com/";
+    location.reload();
 }
 document.querySelector('.signinbtn').setAttribute('style','display:none;');
 document.querySelector('.pcontent').setAttribute('style','display:block;');
