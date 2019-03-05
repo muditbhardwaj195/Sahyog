@@ -87,7 +87,14 @@
 									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle pcontent" style="display:none;" data-toggle="dropdown" role="button" aria-haspopup="true"
+									 aria-expanded="false"></a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" onclick="signOut();" href="#">SignOut</a></li>
+									</ul>
+								</li>
 						</ul>
 						<ul class="nav navbar-nav ml-auto">
 							<li class="nav-item"><a href="#" class="search">
@@ -297,8 +304,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="vendors/counter-up/jquery.counterup.js"></script>
 	<script src="js/mail-script.js"></script>
 	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
     <script src="main.js"></script>
     <script src="logged.js"></script>
@@ -319,7 +324,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log(profile.getName());
-  document.cookie = "check=true; username="+profile.getName()+"; email="+profile.getEmail();
+  document.cookie = "check=true;username="+profile.getName()+";email="+profile.getEmail();
 }
     </script>
 </body>
