@@ -309,6 +309,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
     <script src="main.js"></script>
+    <script src="logged.js"></script>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -325,10 +326,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script>
     function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  document.cookie = "check=true;username="+profile.getName()+";email="+profile.getEmail();
 }
     </script>
 </body>
