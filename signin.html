@@ -119,7 +119,7 @@
     <!--================End Home Banner Area =================-->
 
     <!--================Contact Area =================-->
-    <section class="contact_area section_gap">
+    <section class="contact_area section_gap" style="padding:50px;">
         <div class="container">
                 <center>
                 <button class = "primary-btn text-uppercase nbtn" style="width:236px;">Login/Register</button>
@@ -132,6 +132,43 @@
                     <br>
                     <br>
                         <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </div>
+                <div class="dli hideme">
+                        <span style="font-size:18px;">Login</span>
+                        <br>
+                        <br>
+                       
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="email" name="email" style="width:600px;" placeholder="Enter your email id">
+                        </div>
+                        <div class="form-group">
+                                <input type="password" class="form-control" id="name" name="name" style="width:600px;" placeholder="Password">
+                            </div>
+                       
+                        <button class = "primary-btn text-uppercase">Login</button>
+                        <br>
+                        <br>
+                </div>
+                <div class="def hideme " style="border-top:1px solid grey;">
+                    <br>    
+                    <span style="font-size:18px;">Create a account</span>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" style="width:600px;" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="email" style="width:600px;" placeholder="Enter your email id">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" class="form-control" id="link" name="link" style="width:600px;" placeholder="Provide a link to your certifications">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" class="form-control" id="y" name="y" style="width:600px;" placeholder="Years of experience">
+                    </div>
+                    <button class = "primary-btn text-uppercase" onclick="alert('Your Data Has Been Sent To Our Servers. You Will Be Notified By Email')">Submit</button>
+                    <br>
+                    <br>    
                 </div>
             </center>
         </div>
