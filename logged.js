@@ -22,6 +22,7 @@ function getCookie(cname) {
 }
 var chk = getCookie("check");
 console.log('3.0');
+console.log(document.cookie());
 console.log(getCookie("username"));
 if (chk === "true") {
 document.querySelector('.signinbtn').setAttribute('style','display:none;');
