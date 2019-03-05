@@ -20,6 +20,8 @@ function getCookie(cname) {
     return "";
 }
 var chk = getCookie("check");
+console.log('3.0');
+console.log(getCookie("username"));
 if (chk === "true") {
 document.querySelector('.signinbtn').setAttribute('style','display:none;');
 document.querySelector('.pcontent').setAttribute('style','display:block;');
