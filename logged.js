@@ -33,7 +33,7 @@ document.querySelector('.pcontent').innerHTML = ;
 
 }*/
 auth2 = gapi.auth2.init({
-    client_id: 'CLIENT_ID.apps.googleusercontent.com',
+    client_id: '386445670275-fdce19rfmq07ll61o5n8i415noulm2f2.apps.googleusercontent.com',
     fetch_basic_profile: false,
     scope: 'profile'
   });  
