@@ -319,7 +319,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log(profile.getName());
-  document.cookie = "check=true;username="+profile.getName()+";email="+profile.getEmail();
+  document.cookie = "check=true; username="+profile.getName()+"; email="+profile.getEmail();
 }
     </script>
 </body>
