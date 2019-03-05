@@ -20,6 +20,7 @@ function getCookie(cname) {
     }
     return "";
 }
+/*
 var chk = getCookie("check");
 console.log('3.0');
 console.log(getCookie("check"));
@@ -28,7 +29,13 @@ console.log(getCookie("username"));
 if (chk === "true") {
 document.querySelector('.signinbtn').setAttribute('style','display:none;');
 document.querySelector('.pcontent').setAttribute('style','display:block;');
-document.querySelector('.pcontent').innerHTML = getCookie("username");
+document.querySelector('.pcontent').innerHTML = ;
 } else {
 
-}
+}*/
+if (auth2.isSignedIn.get()) {
+    var profile = auth2.currentUser.get().getBasicProfile();
+    document.querySelector('.signinbtn').setAttribute('style','display:none;');
+    document.querySelector('.pcontent').setAttribute('style','display:block;');
+    document.querySelector('.pcontent').innerHTML = profile.getName();
+}  
