@@ -32,11 +32,20 @@ document.querySelector('.pcontent').innerHTML = ;
 } else {
 
 }*/
+function onSignIn(googleUser) {
+var profile = googleUser.getBasicProfile();
+console.log(profile.getName());
+document.querySelector('.signinbtn').setAttribute('style','display:none;');
+document.querySelector('.pcontent').setAttribute('style','display:block;');
+document.querySelector('.pcontent').innerHTML = profile.getName();
+}
+/*
 var auth2 = gapi.auth2.init();
 if (auth2.isSignedIn.get()) {
-  
+  console.log("Hi");
     var profile = auth2.currentUser.get().getBasicProfile();
     document.querySelector('.signinbtn').setAttribute('style','display:none;');
     document.querySelector('.pcontent').setAttribute('style','display:block;');
     document.querySelector('.pcontent').innerHTML = profile.getName();
 }  
+*/
