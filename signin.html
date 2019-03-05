@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="style.css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -121,12 +122,15 @@
     <section class="contact_area section_gap">
         <div class="container">
                 <center>
-                <button class = "primary-btn text-uppercase" style="width:236px;">Login/Register</button>
+                <button class = "primary-btn text-uppercase nbtn" style="width:236px;">Login/Register</button>
                 <br>
                 <br>
                 <br>
-                <button class = "primary-btn text-uppercase">Doctor Register/Login</button>
-                <div class="abc">
+                <button class = "primary-btn text-uppercase dbtn">Doctor Register/Login</button>
+                <div class="abc hideme">
+                    Sign In with Google
+                    <br>
+                    <br>
                         <div class="g-signin2" data-onsuccess="onSignIn"></div>
                 </div>
             </center>
@@ -257,6 +261,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="main.js"></script>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -268,18 +273,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
-    <script>
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      })
     </script>
     <!--End of Tawk.to Script-->
 </body>
