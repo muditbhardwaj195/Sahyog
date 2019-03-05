@@ -23,7 +23,7 @@ var chk = getCookie("check");
 if (chk === "true") {
 document.querySelector('.signinbtn').setAttribute('style','display:none;');
 document.querySelector('.pcontent').setAttribute('style','display:block;');
-document.querySelector('.pcontent').innerHTML = getCookie("name");
+document.querySelector('.pcontent').innerHTML = getCookie("username");
 } else {
 
 }
